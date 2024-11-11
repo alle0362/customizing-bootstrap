@@ -3,6 +3,45 @@
 
 // Import Google fonts here
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400&display=swap');
+
+$primary: #A04ADD;
+$secondary: #3B53C7;
+$success: #A4D882;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #f2f2f2;
+$dark: #181853;
+
+
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+strong, b {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
 
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
@@ -11,13 +50,99 @@
 
 // Adjust nav link hover color here
 
+$base-font: 'Source Sans 3', sans-serif;
+$heading-font: 'Libre Baskerville', serif;
 
+$h1-size: 3.052rem;
+$h2-size: 2.441rem;
+$h3-size: 1.953rem;
+$h4-size: 1.563rem;
+$h5-size: 1.25rem;
+$h6-size: 1rem;
+
+body {
+  background-color: $light;
+  font-family: $base-font;
+}
+
+.navbar {
+    background-color: $dark;
+  
+    .navbar-nav .nav-link {
+      color: grey;
+  
+      &:hover {
+        color: $primary;
+      }
+    }
+  
+    .navbar-nav .nav-link.active {
+      color: white !important;
+    }
+  
+    .navbar-brand {
+      color: white;
+      font-family: 'Libre Baskerville', serif; 
+    }
+  }
+
+.button-primary {
+  background-color: $primary;
+  color: white;
+}
+
+.btn-success {
+    background-color: $success;
+    border-color: $success;
+  
+    &:hover {
+      background-color: darken($success, 10%);
+      border-color: darken($success, 10%);
+    }
+  }
+  
+  // Info button
+  .btn-info {
+    background-color: $info;
+    border-color: $info;
+  
+    &:hover {
+      background-color: darken($info, 10%);
+      border-color: darken($info, 10%);
+    }
+  }
+  
+  // Warning button
+  .btn-warning {
+    background-color: $warning;
+    border-color: $warning;
+  
+    &:hover {
+      background-color: darken($warning, 10%);
+      border-color: darken($warning, 10%);
+    }
+  }
+  
+  // Danger button
+  .btn-danger {
+    background-color: $danger;
+    border-color: $danger;
+  
+    &:hover {
+      background-color: darken($danger, 10%);
+      border-color: darken($danger, 10%);
+    }
+  }
 
 // Typography
 // Change font family for base text
 
 
-// Change font family for headings
+footer {
+    background-color: $dark; 
+    color: $light;       
+  }
+  
 
 
 
